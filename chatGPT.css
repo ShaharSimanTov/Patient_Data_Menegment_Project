@@ -1,0 +1,63 @@
+body {
+    font-family: Calibri, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0px 250px;
+    padding: 20px;
+  }
+  
+  div {
+    margin-bottom: 10px;
+  }
+
+  #Enter_question {
+    font-weight: bold;
+  }
+
+.title {
+    text-align: center;
+    padding: 20px;
+    color: #333;
+  }
+  
+  /* Subtitle styles */
+.subtitle {
+    text-align: center;
+    color: #666;
+  }
+
+.user_chat {
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  #user_chat_input {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+  }
+
+  #user_chat_btn {
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  #gptRespond {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+.chat_bubble {
+    background-color: rgb(183 217 204);
+    border-radius: 20px;
+    padding: 20px;
+    color: black;
+    font-size: 15px;
+  }

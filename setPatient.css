@@ -1,0 +1,111 @@
+setPatient.css
+
+/* Body and general styling */
+body {
+  font-family: Calibri, Helvetica, sans-serif;
+}
+
+.div_wrapper {
+  margin: 20px 250px;
+}
+
+.page_header {
+  text-align: center;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+/* Table styling */
+.main_table {
+  width: 40vw;
+  margin: 0 auto;
+  text-align: left;
+  background-color: rgb(183 217 204);
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.row_input input[type="text"],
+.row_input input[type="date"],
+.row_input input[type="date"] {
+  width: 50%!important;
+  text-align: left;
+  padding: 10px;
+  border: none;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.row_input {
+  width: 70%;
+  padding: 5px;
+  list-style-type: none;
+  margin:0%;
+}
+
+.row_header {
+  text-align: left;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.checkbox-wrapper-1 {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.row_input ul{
+  display: contents
+}
+
+.row_input ul input{
+  width: 17px;
+  height: 17px;
+}
+
+.checkbox-wrapper-1 label {
+  margin-left: 5px;
+}
+
+.table_header td {
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.table_header input[type="submit"] {
+  width: 50%;
+  padding: 10px;
+  background-color: #01429d;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#picture_btn input[type="file"] {
+  width: 50%;
+  text-align: left;
+  padding: 10px;
+  border: none;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+#picture_btn input[type="file"]::-webkit-file-upload-button {
+  border-radius: 5px;
+  background-color: #4ebaa6;
+  color: #f2f2f2;
+  height: 30px;
+  border-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+

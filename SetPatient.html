@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" style="font-family: Calibri, Helvetica, sans-serif;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>העלאת נתונים לשרת אפליקציה</title>
+    <link href="setPatient.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body style="background: #f2f2f2;">
+    <div class="div_wrapper">
+        <a href="javascript:history.back()"><i class="fas fa-arrow-left"></i></a>
+        <h1 class="page_header">Patient data upload</h1>
+        <!-- target="response" means that the answer will be sent to iframe named "response"-->
+        <form action="/save" method="post" enctype="multipart/form-data">
+            <table class="main_table" border="1">
+                <tr>
+                    <td class="row_header">ID number</td>
+                    <td class="row_input">
+                        <input type="text" name="patientId" autofocus required="true" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="row_header">First name</td>
+                    <td class="row_input">
+                        <input type="text" name="patientName" required="true" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="row_header">Last name</td>
+                    <td class="row_input">
+                        <input type="text" name="patientLastName" required="true" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="row_header">Birth date</td>
+                    <td class="row_input">
+                        <input type="date" name="birthDate" required="true" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="row_header">Health conditions</td>
+                    <td class="row_input">
+                        <ul style="list-style-type:none">
+                            <li>
+                                <div class="checkbox-wrapper-1">
+                                    <input id="condition1" name="condition1" value="Heartfailure" class="substituted"
+                                        type="checkbox" aria-hidden="true" />
+                                    <label for="condition1">Heart failure</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="checkbox-wrapper-1">
+                                    <input id="condition2" name="condition2" value="Chronic renal failure"
+                                        class="substituted" type="checkbox" aria-hidden="true" />
+                                    <label for="condition2">Chronic renal failure</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="checkbox-wrapper-1">
+                                    <input id="condition3" name="condition3" value="Diabetes" class="substituted"
+                                        type="checkbox" aria-hidden="true" />
+                                    <label for="condition3">Diabetes</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="checkbox-wrapper-1">
+                                    <input id="condition4" name="condition4" value="Chronic hepatitis"
+                                        class="substituted" type="checkbox" aria-hidden="true" />
+                                    <label for="condition4">Chronic hepatitis</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="checkbox-wrapper-1">
+                                    <input id="condition5" name="condition5" value="Metabolic syndrome"
+                                        class="substituted" type="checkbox" aria-hidden="true" />
+                                    <label for="condition5">Metabolic syndrome</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="checkbox-wrapper-1">
+                                    <input id="condition6" name="condition6" class="substituted" type="checkbox"
+                                        aria-hidden="true" />
+                                    <label>Other: </label>
+                                    <input name="othercondition" type="text" />
+                                </div>
+                            </li>
+                            </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="row_header">Face image</td>
+                    <td class="row_input" id="picture_btn">
+                        <input type="file" value="upload" id="picture" name="picture" accept='image/*'
+                            required="true" />
+                    </td>
+                </tr>
+                <tr class="table_header">
+                    <td colspan="2">
+                        <input type="submit" value="Save" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>

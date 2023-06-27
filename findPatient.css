@@ -1,0 +1,72 @@
+body {
+    font-family: Calibri, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0px 250px;
+    padding: 20px;
+  }
+  
+  div {
+    margin-bottom: 10px;
+  }
+
+  #Enter_patient_num {
+    font-weight: bold;
+    text-align: center;
+  }
+
+.title {
+    text-align: center;
+    padding: 20px;
+    color: #333;
+  }
+  
+  /* Subtitle styles */
+.subtitle {
+    text-align: center;
+    color: #666;
+  }
+
+.user_input {
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  #user_find_input {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+  }
+
+  #user_btn {
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+.table-data {
+    width: 400px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    background-color:  rgb(183 217 204) ; 
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: Calibri, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.h1 {
+    text-align: center;
+}
+.table {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}

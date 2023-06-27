@@ -1,0 +1,46 @@
+
+body {
+  font-family: Calibri, Helvetica, sans-serif;
+  background-image: url("https://www.mymc.co.il/wp-content/uploads/2017/05/Hospital-Medical-Concept.jpg") ;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.title {
+  text-align: center;
+  padding: 20px;
+  color: #333;
+}
+
+.subtitle {
+  text-align: center;
+  color: #333;
+}
+
+.option_menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.option {
+  display: inline-block;
+  height: 40px;
+  width: 300px;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-decoration: none;
+  background-color: rgb(183 217 204);
+  color: #000000;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.option:hover {
+  background-color: #055f15;
+  color: white;
+}
+

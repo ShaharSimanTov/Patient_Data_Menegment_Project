@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Diagnose</title>
+    <link href="chatGPT.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <script src="../../models/ChatGPT.js" type="module"></script>
+</head>
+<body>
+    <a href="javascript:history.back()"><i class="fas fa-arrow-left"></i></a>
+    <h1 class="title">Get Diagnose</h1>
+    <div id="Enter_question">
+        Enter your question:
+    </div>
+    <div class="user_chat">
+        <input id="user_chat_input" name="question">
+        <button id="user_chat_btn" onclick="sendUserInput()">send</button>
+    </div>
+    <div id="gpt_respond" class="chat_bubble"></div>
+   
+    <script>
+        function sendUserInput() {
+            var question = document.getElementById("user_chat_input").value.toString();
+            fetch('/ask?question=' + encodeURIComponent(question))
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("gpt_respond").innerHTML = data.slice(1, -1);
+                })
+                .catch(error => console.log(error));
+        }
+    </script>
+</body>
+</html>
