@@ -19,6 +19,7 @@ The objective of this initiative is to create a web-based solution that effectiv
 ## Cloud Service Integration: 
 
 To enhance system functionality, integration with various cloud services is implemented, including:
+
 Cloud **Computing Service:** The system utilizes the image recognition service or Computer Vision AI provided by Imagga to verify uploaded images for facial content.
 
 **ChatGPT:** This service leverages GPT technology to obtain initial diagnoses of patients' conditions and acquire summaries of the medical conditions they are experiencing.
